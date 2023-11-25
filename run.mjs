@@ -1,4 +1,5 @@
-import { DaemonConfig, CeramicDaemon } from "@ceramicnetwork/cli";
+import { DaemonConfig } from "@ceramicnetwork/cli";
+import { writeFile } from "fs";
 
 const generateConfig = (adminDid, dbUrl) => {
   return DaemonConfig.fromObject({
@@ -35,4 +36,9 @@ const generateConfig = (adminDid, dbUrl) => {
 };
 
 const config = generateConfig(process.env.ADMIN_DID, process.env.DB_URL);
-CeramicDaemon.create(config);
+
+writeFile("./daemon.config.json", JSON.stringify(config), (err) => {
+  if (err) {
+    console.error(err);
+  }
+});

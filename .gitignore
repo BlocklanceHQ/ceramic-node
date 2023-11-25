@@ -1,3 +1,4 @@
 .env
 .ceramic
 node_modules
+daemon.config.json
