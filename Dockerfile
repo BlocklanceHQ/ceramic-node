@@ -7,8 +7,7 @@ COPY yarn.lock ./
 RUN yarn
 COPY run.mjs ./
 
-RUN node run.mjs
-COPY daemon.config.json ./
+CMD node run.mjs
 
 EXPOSE 7007
 
