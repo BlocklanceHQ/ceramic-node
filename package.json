@@ -1,0 +1,19 @@
+{
+  "name": "neonblock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run.mjs",
+  "scripts": {
+    "dev": "ceramic daemon",
+    "start": "node run.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "dotenv": "16.3.1"
+  },
+  "dependencies": {
+    "@ceramicnetwork/cli": "2.44.0"
+  }
+}
