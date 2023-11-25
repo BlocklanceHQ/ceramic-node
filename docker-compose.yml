@@ -5,3 +5,6 @@ services:
       - "7007:7007"
     env_file:
       - .env
+    environment:
+      ADMIN_DID: ${ADMIN_DID}
+      DB_URL: ${DB_URL}

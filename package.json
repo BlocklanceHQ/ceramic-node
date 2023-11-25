@@ -4,7 +4,7 @@
   "description": "",
   "main": "run.mjs",
   "scripts": {
-    "start": "ceramic daemon --config ./daemon.config.json"
+    "start": "node run.mjs && ceramic daemon --config ./daemon.config.json"
   },
   "keywords": [],
   "author": "",

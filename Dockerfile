@@ -7,8 +7,6 @@ COPY yarn.lock ./
 RUN yarn
 COPY run.mjs ./
 
-CMD node run.mjs
-
 EXPOSE 7007
 
 CMD ["npm", "run", "start"]
