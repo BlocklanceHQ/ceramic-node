@@ -35,7 +35,7 @@ const generateConfig = (adminDid, dbUrl) => {
   });
 };
 
-const config = generateConfig(process.env.ADMIN_DID, process.env.DB_URL);
+const config = generateConfig(process.env.ADMIN_DID, process.env.AWS_RDS_URL);
 
 writeFile("./daemon.config.json", JSON.stringify(config), (err) => {
   if (err) {
