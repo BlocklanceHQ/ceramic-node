@@ -2,9 +2,9 @@ FROM node:20.10
 WORKDIR /app
 
 COPY package.json ./
-COPY yarn.lock ./
+COPY package-lock.json ./
 
-RUN yarn
+RUN npm install
 COPY run.mjs ./
 
 EXPOSE 7007
